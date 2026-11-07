@@ -1,0 +1,4 @@
+Model,Accuracy,Accuracy (%)
+KNN,0.95,95.0
+SVM,0.8855,88.55
+Random Forest,0.9725,97.25

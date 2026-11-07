@@ -1,0 +1,67 @@
+MNIST Handwritten Digit Recognition
+
+Project Overview
+
+This project uses machine learning to recognize handwritten digits (0–9) from images using the MNIST dataset.
+
+A Streamlit web application allows users to upload an image of a handwritten digit and receive a prediction.
+
+Dataset
+
+* Dataset: MNIST
+* Images: 70,000
+* Image dimensions: 28 × 28 pixels
+* Classes: Digits 0–9
+* Pixel values normalized between 0 and 1
+
+Machine Learning Algorithms
+
+Three algorithms were evaluated:
+
+1. K-Nearest Neighbors (KNN)
+2. Support Vector Machine (LinearSVC)
+3. Random Forest Classifier
+
+Model Comparison
+
+Model	Accuracy
+KNN	95.00%
+SVM (LinearSVC)	88.55%
+Random Forest	97.25%
+
+The models were evaluated on the same sample of 2,000 test images. Random Forest achieved the highest accuracy in this comparison.
+
+Technologies Used
+
+* Python
+* NumPy
+* Pandas
+* Matplotlib
+* Seaborn
+* Scikit-learn
+* Streamlit
+* Pillow
+* Joblib
+* Jupyter Notebook
+
+Project Files
+
+* mnist_project.ipynb — data preparation, model training and evaluation
+* app.py — Streamlit application
+* mnist_digit_model.pkl — saved Random Forest model
+* model_comparison.csv — model accuracy results
+* mnist_accuracy_comparison.png — accuracy comparison chart
+
+How to Run the Application
+
+1. Install the required packages:
+    python -m pip install streamlit numpy scikit-learn pillow joblib
+2. Open the project folder in the terminal.
+3. Run:
+    streamlit run app.py
+4. Open the local address shown in the terminal.
+5. Upload a handwritten digit image and click Predict Digit.
+
+Conclusion
+
+Random Forest achieved the highest accuracy among the three evaluated models. The trained model was integrated into a Streamlit application to demonstrate handwritten digit prediction.
