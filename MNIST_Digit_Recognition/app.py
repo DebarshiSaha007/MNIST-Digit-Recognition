@@ -3,9 +3,11 @@ import streamlit as st
 import numpy as np
 import joblib
 from PIL import Image, ImageOps
+from pathlib import Path
 
 # Load trained model
-model = joblib.load("mnist_digit_model_small.pkl")
+model_path = Path(__file__).parent / "mnist_digit_model_small.pkl"
+model = joblib.load(model_path)
 
 # Page configuration
 st.set_page_config(
